@@ -1,5 +1,6 @@
 package com.demo.project.sms.service.impl;
 
+import com.demo.project.sms.StudentManagementSystemApplication;
 import com.demo.project.sms.dto.StudentDto;
 import com.demo.project.sms.entity.Student;
 import com.demo.project.sms.mapper.StudentMapper;
@@ -36,8 +37,7 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public StudentDto getStudentById(Long studentId) {
         Student student=studentRepository.findById(studentId).get();
-        StudentDto studentDto=StudentMapper.mapToStudentDto(student);
-        return studentDto;
+        return StudentMapper.mapToStudentDto(student);
     }
 
     @Override
