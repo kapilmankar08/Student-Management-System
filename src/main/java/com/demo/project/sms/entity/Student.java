@@ -1,4 +1,4 @@
-package net.javaguides.sms.entity;
+package com.demo.project.sms.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

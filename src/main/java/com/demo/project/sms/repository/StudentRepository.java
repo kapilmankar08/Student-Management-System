@@ -1,6 +1,6 @@
-package net.javaguides.sms.repository;
+package com.demo.project.sms.repository;
 
-import net.javaguides.sms.entity.Student;
+import com.demo.project.sms.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface StudentRepository extends JpaRepository<Student, Long> {}

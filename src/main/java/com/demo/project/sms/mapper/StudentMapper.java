@@ -1,7 +1,7 @@
-package net.javaguides.sms.mapper;
+package com.demo.project.sms.mapper;
 
-import net.javaguides.sms.dto.StudentDto;
-import net.javaguides.sms.entity.Student;
+import com.demo.project.sms.dto.StudentDto;
+import com.demo.project.sms.entity.Student;
 
 public class StudentMapper {
 

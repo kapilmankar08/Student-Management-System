@@ -1,4 +1,4 @@
-package net.javaguides.sms.dto;
+package com.demo.project.sms.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;

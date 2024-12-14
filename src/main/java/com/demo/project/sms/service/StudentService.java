@@ -1,6 +1,6 @@
-package net.javaguides.sms.service;
+package com.demo.project.sms.service;
 
-import net.javaguides.sms.dto.StudentDto;
+import com.demo.project.sms.dto.StudentDto;
 
 import java.util.List;
 

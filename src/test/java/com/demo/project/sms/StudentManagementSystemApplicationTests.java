@@ -1,4 +1,4 @@
-package net.javaguides.sms;
+package com.demo.project.sms;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
