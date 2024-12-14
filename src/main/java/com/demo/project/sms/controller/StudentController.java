@@ -1,9 +1,8 @@
-package net.javaguides.sms.controller;
+package com.demo.project.sms.controller;
 
 import jakarta.validation.Valid;
-import net.javaguides.sms.dto.StudentDto;
-import net.javaguides.sms.entity.Student;
-import net.javaguides.sms.service.StudentService;
+import com.demo.project.sms.dto.StudentDto;
+import com.demo.project.sms.service.StudentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;

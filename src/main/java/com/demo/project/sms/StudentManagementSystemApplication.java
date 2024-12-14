@@ -1,4 +1,4 @@
-package net.javaguides.sms;
+package com.demo.project.sms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

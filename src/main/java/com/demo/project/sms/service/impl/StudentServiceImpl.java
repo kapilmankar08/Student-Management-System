@@ -1,10 +1,10 @@
-package net.javaguides.sms.service.impl;
+package com.demo.project.sms.service.impl;
 
-import net.javaguides.sms.dto.StudentDto;
-import net.javaguides.sms.entity.Student;
-import net.javaguides.sms.mapper.StudentMapper;
-import net.javaguides.sms.repository.StudentRepository;
-import net.javaguides.sms.service.StudentService;
+import com.demo.project.sms.repository.StudentRepository;
+import com.demo.project.sms.service.StudentService;
+import com.demo.project.sms.dto.StudentDto;
+import com.demo.project.sms.entity.Student;
+import com.demo.project.sms.mapper.StudentMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
