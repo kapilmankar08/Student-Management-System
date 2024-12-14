@@ -27,31 +27,19 @@
 <br /><br /><br />
 <div class="container">
     <div class="row">
-        <h1>List of Students</h1>
+        <div class="col-md-8 offset-m-2">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">Student Details</h2>
+                </div>
+                <div class="card-body">
+                    <p>Student First Name: <strong th:text="${student.firstName}"></strong></p>
+                    <p>Student Last Name: <strong th:text="${student.lastName}"></strong></p>
+                    <p>Student Email Address: <strong th:text="${student.email}"></strong></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <br />
-    <table class="table table-stripped table-hover table-bordered">
-        <thead class="table-dark">
-            <tr>
-                <th>Student First Name</th>
-                <th>Student Last Name</th>
-                <th>Student Email</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="student : ${students}">
-                <td th:text="${student.firstName}"></td>
-                <td th:text="${student.lastName}"></td>
-                <td th:text="${student.email}"></td>
-                <td>
-                    <a class="btn btn-primary" th:href="@{/students/{studentId}/edit(studentId=${student.id})}">Edit</a>
-                    <a class="btn btn-danger" th:href="@{/students/{studentId}/delete(studentId=${student.id})}">Delete</a>
-                    <a class="btn btn-info" th:href="@{/students/{studentId}/view(studentId=${student.id})}">View</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
 </div>
 </body>
 </html>
