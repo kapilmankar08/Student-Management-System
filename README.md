@@ -41,7 +41,7 @@ Sample Configuration.
     `mvn spring-boot::run`
 
 ## Usage
-- Open your browser and go to http://localhost:8080 to interact with the application.
+- Open your browser and go to http://localhost:8080/students to interact with the application.
 - Use the interface to add, update, delete, or view student records.
 
 ## License
