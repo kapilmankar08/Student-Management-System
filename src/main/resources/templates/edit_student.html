@@ -12,19 +12,20 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" th:href="@{/students}">Student Management System</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" th:href="@{students/new}">New Student</a>
+                    <a aria-current="page" class="nav-link active" th:href="@{students/new}">New Student</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<br /><br /><br />
+<br/><br/><br/>
 
 <div class="container">
     <div class="card">
@@ -44,10 +45,10 @@
                             id="firstName"
                             name="firstName"
                             placeholder="Enter First Name"
-                            type="text"
                             th:field="*{firstName}"
+                            type="text"
                     />
-                    <p th:if="${#fields.hasErrors('firstName')}" class="text-danger" th:errors="*{firstName}"></p>
+                    <p class="text-danger" th:errors="*{firstName}" th:if="${#fields.hasErrors('firstName')}"></p>
                 </div>
 
                 <div class="form-group mb-3">
@@ -57,10 +58,10 @@
                             id="lastName"
                             name="lastName"
                             placeholder="Enter Last Name"
-                            type="text"
                             th:field="*{lastName}"
+                            type="text"
                     />
-                    <p th:if="${#fields.hasErrors('lastName')}" class="text-danger" th:errors="*{lastName}"></p>
+                    <p class="text-danger" th:errors="*{lastName}" th:if="${#fields.hasErrors('lastName')}"></p>
                 </div>
 
                 <div class="form-group mb-3">
@@ -70,10 +71,10 @@
                             id="email"
                             name="email"
                             placeholder="Enter Email Address"
-                            type="email"
                             th:field="*{email}"
+                            type="email"
                     />
-                    <p th:if="${#fields.hasErrors('email')}" class="text-danger" th:errors="*{email}"></p>
+                    <p class="text-danger" th:errors="*{email}" th:if="${#fields.hasErrors('email')}"></p>
                 </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
             </form>

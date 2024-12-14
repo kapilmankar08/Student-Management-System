@@ -12,44 +12,45 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Student Management System</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" th:href="@{students/new}">New Student</a>
+                    <a aria-current="page" class="nav-link active" th:href="@{students/new}">New Student</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<br /><br /><br />
+<br/><br/><br/>
 <div class="container">
     <div class="row">
         <h1>List of Students</h1>
     </div>
-    <br />
+    <br/>
     <table class="table table-stripped table-hover table-bordered">
         <thead class="table-dark">
-            <tr>
-                <th>Student First Name</th>
-                <th>Student Last Name</th>
-                <th>Student Email</th>
-                <th>Actions</th>
-            </tr>
+        <tr>
+            <th>Student First Name</th>
+            <th>Student Last Name</th>
+            <th>Student Email</th>
+            <th>Actions</th>
+        </tr>
         </thead>
         <tbody>
-            <tr th:each="student : ${students}">
-                <td th:text="${student.firstName}"></td>
-                <td th:text="${student.lastName}"></td>
-                <td th:text="${student.email}"></td>
-                <td>
-                    <a class="btn btn-primary" th:href="@{/students/{studentId}/edit(studentId=${student.id})}">Edit</a>
-                    <a class="btn btn-danger" th:href="@{/students/{studentId}/delete(studentId=${student.id})}">Delete</a>
-                    <a class="btn btn-info" th:href="@{/students/{studentId}/view(studentId=${student.id})}">View</a>
-                </td>
-            </tr>
+        <tr th:each="student : ${students}">
+            <td th:text="${student.firstName}"></td>
+            <td th:text="${student.lastName}"></td>
+            <td th:text="${student.email}"></td>
+            <td>
+                <a class="btn btn-primary" th:href="@{/students/{studentId}/edit(studentId=${student.id})}">Edit</a>
+                <a class="btn btn-danger" th:href="@{/students/{studentId}/delete(studentId=${student.id})}">Delete</a>
+                <a class="btn btn-info" th:href="@{/students/{studentId}/view(studentId=${student.id})}">View</a>
+            </td>
+        </tr>
         </tbody>
     </table>
 </div>

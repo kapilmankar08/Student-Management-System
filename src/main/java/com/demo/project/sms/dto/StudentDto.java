@@ -11,13 +11,16 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class StudentDto {
-    private Long id;
-    @NotEmpty(message = "Field cannot be empty")
-    private String firstName;
-    @NotEmpty(message = "Field cannot be empty")
-    private String lastName;
-    @NotEmpty(message = "Field cannot be empty")
-    private String email;
+  private Long id;
 
-    // getter/setter methods
+  @NotEmpty(message = "Field cannot be empty")
+  private String firstName;
+
+  @NotEmpty(message = "Field cannot be empty")
+  private String lastName;
+
+  @NotEmpty(message = "Field cannot be empty")
+  private String email;
+
+  // getter/setter methods
 }

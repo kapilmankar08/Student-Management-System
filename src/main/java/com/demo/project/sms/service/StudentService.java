@@ -1,7 +1,6 @@
 package com.demo.project.sms.service;
 
 import com.demo.project.sms.dto.StudentDto;
-
 import java.util.List;
 
 public interface StudentService {
