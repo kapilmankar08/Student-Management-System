@@ -29,23 +29,23 @@
 <div class="container">
     <div class="card">
         <div class="card-header">
-            <h2 class="text-center">Create Student</h2>
+            <h2 class="text-center">Edit Student</h2>
         </div>
         <div class="card-body">
             <form method="post"
-            role="form"
-            th:action="@{/students}"
-            th:object="${student}"
+                  role="form"
+                  th:action="@{/students/{studentId} (studentId=${student.id})}"
+                  th:object="${student}"
             >
                 <div class="form-group mb-3">
                     <label class="form-label">Student First Name</label>
                     <input
-                        class="form-control"
-                        id="firstName"
-                        name="firstName"
-                        placeholder="Enter First Name"
-                        type="text"
-                        th:field="*{firstName}"
+                            class="form-control"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Enter First Name"
+                            type="text"
+                            th:field="*{firstName}"
                     />
                     <p th:if="${#fields.hasErrors('firstName')}" class="text-danger" th:errors="*{firstName}"></p>
                 </div>
