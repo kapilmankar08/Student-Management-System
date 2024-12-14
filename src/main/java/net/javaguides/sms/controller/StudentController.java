@@ -29,4 +29,24 @@ public class StudentController {
     model.addAttribute("students", students);
     return "students";
   }
+
+  //handler method to handle new student request
+  @GetMapping("/students/new")
+  public String newStudent(Model model){
+    StudentDto studentDto=new StudentDto();
+    model.addAttribute("student",studentDto);
+    return "create_student";
+  }
+
+  //handler method to handle save student form submit request
+  @PostMapping("/students")
+  public String saveStudent(@Valid @ModelAttribute("student") StudentDto studentDto, BindingResult result, Model model){
+
+    if(result.hasErrors()){
+      model.addAttribute("student",studentDto);
+      return "create_student";
+    }
+    studentService.createStudent(studentDto);
+    return "redirect:/students";
+  }
 }
