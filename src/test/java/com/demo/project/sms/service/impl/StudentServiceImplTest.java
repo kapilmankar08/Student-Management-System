@@ -33,12 +33,12 @@ public class StudentServiceImplTest {
     when(studentRepository.findAll()).thenReturn(students);
 
     // Act
-    List<StudentDto> studentDtos = studentService.getAllStudents();
+    List<StudentDto> studentDto = studentService.getAllStudents();
 
     // Assert
-    assertEquals(2, studentDtos.size());
-    assertEquals("John", studentDtos.get(0).getFirstName());
-    assertEquals("Jane", studentDtos.get(1).getFirstName());
+    assertEquals(2, studentDto.size());
+    assertEquals("John", studentDto.get(0).getFirstName());
+    assertEquals("Jane", studentDto.get(1).getFirstName());
   }
 
   @Test
