@@ -1,13 +1,14 @@
-package com.demo.project.sms.service.impl;
+package com.student.management.service.impl;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-import com.demo.project.sms.dto.StudentDto;
-import com.demo.project.sms.entity.Student;
-import com.demo.project.sms.repository.StudentRepository;
+import com.student.management.dto.StudentDto;
+import com.student.management.entity.Student;
+import com.student.management.repository.StudentRepository;
 import java.util.Arrays;
 import java.util.List;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;

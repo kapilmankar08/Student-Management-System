@@ -1,4 +1,4 @@
-package com.demo.project.sms;
+package com.student.management;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

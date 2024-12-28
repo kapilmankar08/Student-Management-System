@@ -1,7 +1,7 @@
-package com.demo.project.sms.mapper;
+package com.student.management.mapper;
 
-import com.demo.project.sms.dto.StudentDto;
-import com.demo.project.sms.entity.Student;
+import com.student.management.dto.StudentDto;
+import com.student.management.entity.Student;
 
 public class StudentMapper {
 
