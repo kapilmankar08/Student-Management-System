@@ -44,7 +44,7 @@ Sample Configuration.
 - Open your browser and go to http://localhost:8080/students to interact with the application.
 - Use the interface to add, update, delete, or view student records.
 
-##Screenshots
+## Screenshots
 ![Student Page Screenshot](screenshots/localhost_8080_students_new.png)
 ![Edit Student Screenshot](screenshots/localhost_8080_students_17_edit.png)
 ![View Student Screenshot](screenshots/localhost_8080_students_all2.png)
