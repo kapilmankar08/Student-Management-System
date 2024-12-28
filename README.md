@@ -1,5 +1,9 @@
 # Student Management System
 
+![Student Page Screenshot](path/to/student_page.png)
+
+# Student Management System
+
 This is a simple Student Management System developed using **Spring Boot** and **Hibernate**. The application provides functionality to add, update, delete, and view student records. It leverages a MySQL database for persistence and Spring MVC for web interface handling.
 
 ## Features
