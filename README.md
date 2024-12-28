@@ -46,9 +46,9 @@ Sample Configuration.
 
 #Screenshots
 ![Student Page Screenshot](screenshots/localhost_8080_students_new.png)
-![View Student Screenshot](screenshots/localhost_8080_students_all.png)
 ![Edit Student Screenshot](screenshots/localhost_8080_students_17_edit.png)
-![Delete Student Screenshot](screenshots/localhost_8080_students_12_view.png)
+![View Student Screenshot](screenshots/localhost_8080_students_all2.png)
+![Delete Student Screenshot](screenshots/localhost_8080_students_17_view.png)
 
 ## License
 - This project is licensed under the MIT License.
