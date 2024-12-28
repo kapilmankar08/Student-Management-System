@@ -1,6 +1,6 @@
 # Student Management System
 
-![Student Page Screenshot]([screenshots/localhost_8080_students.png))
+![Student Page Screenshot]([screenshots/localhost_8080_students.png]))
 
 # Student Management System
 
