@@ -1,6 +1,6 @@
 # Student Management System
 
-![Student Page Screenshot](path/to/student_page.png)
+![Student Page Screenshot]([path/to/student_page.png](https://github.com/kapilmankar08/Student-Management-System/blob/master/screenshots/localhost_8080_students.png))
 
 # Student Management System
 
