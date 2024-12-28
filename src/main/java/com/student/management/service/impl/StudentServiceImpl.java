@@ -1,13 +1,13 @@
-package com.demo.project.sms.service.impl;
+package com.student.management.service.impl;
 
-import com.demo.project.sms.StudentManagementSystemApplication;
-import com.demo.project.sms.dto.StudentDto;
-import com.demo.project.sms.entity.Student;
-import com.demo.project.sms.mapper.StudentMapper;
-import com.demo.project.sms.repository.StudentRepository;
-import com.demo.project.sms.service.StudentService;
+import com.student.management.dto.StudentDto;
+import com.student.management.entity.Student;
+import com.student.management.mapper.StudentMapper;
+import com.student.management.repository.StudentRepository;
+import com.student.management.service.StudentService;
 import java.util.List;
 import java.util.stream.Collectors;
+
 import org.springframework.stereotype.Service;
 
 @Service

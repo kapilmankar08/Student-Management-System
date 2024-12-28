@@ -1,7 +1,7 @@
-package com.demo.project.sms.controller;
+package com.student.management.controller;
 
-import com.demo.project.sms.dto.StudentDto;
-import com.demo.project.sms.service.StudentService;
+import com.student.management.dto.StudentDto;
+import com.student.management.service.StudentService;
 import jakarta.validation.Valid;
 import java.util.List;
 import org.springframework.stereotype.Controller;

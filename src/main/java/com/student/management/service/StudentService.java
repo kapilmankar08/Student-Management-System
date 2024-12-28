@@ -1,6 +1,7 @@
-package com.demo.project.sms.service;
+package com.student.management.service;
 
-import com.demo.project.sms.dto.StudentDto;
+import com.student.management.dto.StudentDto;
+
 import java.util.List;
 
 public interface StudentService {

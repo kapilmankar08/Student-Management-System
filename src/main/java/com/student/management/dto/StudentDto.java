@@ -1,4 +1,4 @@
-package com.demo.project.sms.dto;
+package com.student.management.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;

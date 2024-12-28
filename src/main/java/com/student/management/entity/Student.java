@@ -1,4 +1,4 @@
-package com.demo.project.sms.entity;
+package com.student.management.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

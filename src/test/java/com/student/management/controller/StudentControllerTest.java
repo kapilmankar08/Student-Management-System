@@ -1,12 +1,12 @@
-package com.demo.project.sms.controller;
+package com.student.management.controller;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.demo.project.sms.dto.StudentDto;
-import com.demo.project.sms.service.StudentService;
+import com.student.management.dto.StudentDto;
+import com.student.management.service.StudentService;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
