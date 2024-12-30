@@ -26,20 +26,21 @@ public class StudentController {
     return "students";
   }
 
-  //handler method to handle new student request
+  // handler method to handle new student request
   @GetMapping("/students/new")
-  public String newStudent(Model model){
-    StudentDto studentDto=new StudentDto();
-    model.addAttribute("student",studentDto);
+  public String newStudent(Model model) {
+    StudentDto studentDto = new StudentDto();
+    model.addAttribute("student", studentDto);
     return "create_student";
   }
 
-  //handler method to handle save student form submit request
+  // handler method to handle save student form submit request
   @PostMapping("/students")
-  public String saveStudent(@Valid @ModelAttribute("student") StudentDto studentDto, BindingResult result, Model model){
+  public String saveStudent(
+      @Valid @ModelAttribute("student") StudentDto studentDto, BindingResult result, Model model) {
 
-    if(result.hasErrors()){
-      model.addAttribute("student",studentDto);
+    if (result.hasErrors()) {
+      model.addAttribute("student", studentDto);
       return "create_student";
     }
     studentService.createStudent(studentDto);
@@ -47,18 +48,22 @@ public class StudentController {
   }
 
   @GetMapping("/students/{studentId}/edit")
-  public String editStudent(@PathVariable("studentId") Long studentId, Model model){
-    StudentDto studentDto=studentService.getStudentById(studentId);
-    model.addAttribute("student",studentDto);
+  public String editStudent(@PathVariable("studentId") Long studentId, Model model) {
+    StudentDto studentDto = studentService.getStudentById(studentId);
+    model.addAttribute("student", studentDto);
     return "edit_student";
   }
 
-  //handler method to handle the edit response of the existing student
+  // handler method to handle the edit response of the existing student
 
   @PostMapping("/students/{studentId}")
-  public String updateStudent(@PathVariable("studentId") Long id, @Valid @ModelAttribute("student") StudentDto studentDto, BindingResult result, Model model){
-    if(result.hasErrors()){
-      model.addAttribute("student",studentDto);
+  public String updateStudent(
+      @PathVariable("studentId") Long id,
+      @Valid @ModelAttribute("student") StudentDto studentDto,
+      BindingResult result,
+      Model model) {
+    if (result.hasErrors()) {
+      model.addAttribute("student", studentDto);
       return "edit_student";
     }
     studentDto.setId(id);
@@ -66,18 +71,18 @@ public class StudentController {
     return "redirect:/students";
   }
 
-  //handler method to handle delete request
+  // handler method to handle delete request
   @GetMapping("/students/{studentId}/delete")
-  public String deleteStudent(@PathVariable("studentId") Long id){
+  public String deleteStudent(@PathVariable("studentId") Long id) {
     studentService.deleteStudent(id);
     return "redirect:/students";
   }
 
-  //handler method to handle delete request
+  // handler method to handle delete request
   @GetMapping("students/{studentId}/view")
-  public String viewStudent(@PathVariable("studentId") Long id, Model model){
-    StudentDto studentDto=studentService.getStudentById(id);
-    model.addAttribute("student",studentDto);
+  public String viewStudent(@PathVariable("studentId") Long id, Model model) {
+    StudentDto studentDto = studentService.getStudentById(id);
+    model.addAttribute("student", studentDto);
     return "view_students";
   }
 }
